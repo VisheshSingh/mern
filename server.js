@@ -16,6 +16,8 @@ mongoose.connect(uri, {
   useUnifiedTopology: true
 });
 
+app.use('/', require('./routes/articles'));
+
 const connection = mongoose.connection;
 connection.once('open', () => console.log(`MONGODB successfully connected 😎`));
 
