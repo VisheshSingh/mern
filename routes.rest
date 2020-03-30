@@ -1,1 +1,28 @@
 GET http://localhost:8080/
+
+###
+
+GET http://localhost:8080/5e2368e29b39ff2408b0f10d
+
+###
+
+POST http://localhost:8080/add
+Content-Type: application/json
+
+{
+    "title": "Firebase",
+    "description": "Build apps fast, without managing infrastructure. Firebase gives you functionality like analytics, databases, messaging and crash reporting so you can move quickly and focus on your users. Backed by Google, trusted by top apps. Firebase is built on Google infrastructure and scales automatically, for even the largest apps. One platform, with products that work better together. Firebase products work great individually but share data and insights, so they work even better together.",
+    "author": "V-boy"
+}
+
+###
+
+PATCH http://localhost:8080/5e234dbd1c9d44000056f4f2
+Content-Type: application/json
+
+{
+    "title": "Testing title!"
+}
+###
+
+DELETE http://localhost:8080/5e234dbd1c9d44000056f4f2
